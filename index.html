@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ['Montserrat', 'sans-serif'],
+              inter: ['Inter', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'], 
+              playfair: ['Playfair Display', 'serif'],
+            },
+            colors: {
+                'cream-bg': '#f0e4d3',
+                'brown-light': '#dcc5b2',
+                'brown-dark': '#d9a299',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      .mask-group {
+        background-image: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-08-15/zFKEjLACt8.png);
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black min-h-screen">
+    <div class="main-layout flex flex-col items-center">
+      </div>
+
+
+<nav class="w-full py-4 px-4 md:px-0 mt-4">
+  <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center gap-5 font-montserrat text-sm md:text-base font-semibold scroll-smooth">
+    <a href="#home" class="hover:text-gray-600 transition duration-200 cursor-pointer">Home</a>
+    <a href="#profile" class="hover:text-gray-600 transition duration-200 cursor-pointer">Profile</a>
+    <a href="#experience" class="hover:text-gray-600 transition duration-200 cursor-pointer">Experience</a>
+    <a href="#message" class="hover:text-gray-600 transition duration-200 cursor-pointer">Message</a>
+  </div>
+</nav>
+
+
+      <!-- Welcome-->
+      <section id="home" class="w-full h-[578px] bg-cream-bg pt-20 pb-10 px-6 flex items-center justify-start relative overflow-hidden">
+        <div class="max-w-screen-xl mx-auto w-full"> 
+          <div class="ml-0 md:ml-10"> 
+            <span class="block text-2xl md:text-3xl lg:text-4xl font-montserrat font-semibold mb-4">Welcome !!</span>
+            <span class="block text-2xl md:text-3xl lg:text-4xl font-montserrat font-semibold mb-6">Hallo <span id="welcome-user">User</span> To My Portofolio</span>
+            <span class="block max-w-xs md:max-w-sm text-base md:text-lg font-montserrat font-medium">explore my journey, skills, and experiences.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile-->
+      <section  id="profile" class="w-full h-[712px] bg-brown-light py-20 px-6 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 relative">
+        <div class="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20"> 
+          <div class="mask-group w-64 h-64 md:w-80 md:h-80 lg:w-[483px] lg:h-[504px] rounded-full lg:rounded-none overflow-hidden flex-shrink-0">
+             
+          </div>
+          <div class="text-center md:text-left max-w-md">
+            <span class="block text-3xl md:text-4xl lg:text-5xl font-playfair font-normal mb-2">Hello, my name is </span>
+            <span class="block text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-4">Muthmainnah Salman</span>
+            <p class="text-lg md:text-xl font-poppins">
+              Saya merupakan mahasiswa prodi teknik informatika yang sedang mengikuti kelas coding camp
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience-->
+      <section id="experience" class="w-full h-[659px] bg-brown-dark py-20 px-6 relative overflow-hidden">
+        <div class="max-w-screen-xl mx-auto w-full"> 
+          <span class="block text-3xl md:text-4xl lg:text-5xl font-montserrat font-semibold mb-12 text-center md:text-left pt-0 md:pt-4 pl-0 md:pl-10">MY EXPERIENCE</span>
+          <div class="flex flex-col md:flex-row justify-between items-start w-full mx-auto pt-10">
+            <div class="flex flex-col w-full md:w-1/2 lg:w-2/5 mb-10 md:mb-0 px-4 md:px-0">
+              <div class="flex flex-col sm:flex-row items-center justify-between mb-16 gap-4 sm:gap-0">
+                <span class="text-3xl md:text-4xl lg:text-5xl font-montserrat font-semibold whitespace-nowrap">EDUCATION</span>
+                <div class="border border-black rounded-full px-4 py-2 text-base md:text-lg font-inter whitespace-nowrap">2024 - NOW</div>
+              </div>
+              <p class="text-lg md:text-xl font-poppins mt-2">
+                Universitas Al-Asyariah Mandar<br />Sulawesi Barat
+              </p>
+              <!-- Soft Skill -->
+              <h3 class="text-3xl md:text-4xl lg:text-5xl font-montserrat font-semibold mt-16 mb-4">SOFT SKILL</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-10 text-lg md:text-xl font-poppins">
+                <span>Colaboration</span>
+                <span>Public Speaking</span>
+                <span>Teamwork</span>
+                <span>Creative</span>
+                <span>Adaptability</span>
+              </div>
+            </div>
+
+            <!-- Hard Skill -->
+            <div class="flex flex-col w-full md:w-1/2 lg:w-2/5 items-start relative pl-0 md:pl-10 mt-10 md:mt-0">
+              <div class="hidden lg:block absolute left-0 top-0 h-full w-[1px] bg-black"></div>
+              <h3 class="text-3xl md:text-4xl lg:text-5xl font-montserrat font-semibold mb-4 md:mb-16">HARD SKILL</h3>
+              <div class="flex flex-col gap-y-2 text-lg md:text-xl font-inter">
+                <span>Frontend</span>
+                <span>Canva Editing</span>
+                <span>Microsoft Office</span>
+                <span>Basic Documentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Message Us -->
+      <section class="w-full py-20 px-6 relative overflow-hidden">
+        <div class="max-w-screen-xl mx-auto w-full">
+          <span class="block text-3xl md:text-4xl lg:text-5xl font-inter font-normal mb-12 text-center md:text-left pt-0 md:pt-4 pl-0 md:pl-10">Message Us</span>
+
+          <form id="message-form" class="flex flex-col md:flex-row items-start gap-8 w-full mx-auto mt-10">
+            <div class="flex flex-col gap-y-7 text-lg md:text-xl font-inter whitespace-nowrap">
+              <span>Nama :</span>
+              <span>Tanggal Lahir :</span>
+              <span>Jenis Kelamin :</span>
+              <span>Pesan :</span>
+            </div>
+
+            <div class="flex flex-col w-full">
+              <input type="text" id="name" name="name" class="w-full md:w-[236px] p-1 border border-black rounded-sm mb-4 bg-transparent" />
+              <input type="date" id="dob" name="dob" class="w-full md:w-[236px] p-1 border border-black rounded-sm mb-4 bg-transparent" />
+
+              <div class="flex items-center gap-x-8 mb-4">
+                <label class="inline-flex items-center cursor-pointer">
+                  <input type="radio" name="gender" value="laki-laki" class="form-radio h-4 w-4 text-black border-black rounded-full" />
+                  <span class="ml-2 text-lg font-inter">Laki - laki</span>
+                </label>
+                <label class="inline-flex items-center cursor-pointer">
+                  <input type="radio" name="gender" value="perempuan" class="form-radio h-4 w-4 text-black border-black rounded-full" />
+                  <span class="ml-2 text-lg font-inter">Perempuan</span>
+                </label>
+              </div>
+
+              <textarea id="message" name="message" rows="6" class="w-full md:w-[236px] h-[118px] p-1 border border-black rounded-sm bg-transparent resize-y"></textarea>
+
+              <button type="submit" class="w-full md:w-[359px] h-[32px] border border-black rounded-sm flex items-center justify-center mt-8 bg-transparent hover:bg-gray-100 transition duration-200">
+                <span class="text-lg font-inter">Submit</span>
+              </button>
+            </div>
+          </form>
+
+          <div id="message-display-box" class="hidden mt-12 p-6 border border-gray-300 rounded-lg shadow-md bg-gray-50 max-w-2xl mx-auto w-full">
+            <h3 class="text-xl font-semibold mb-4">Pesan Anda:</h3>
+            <p><strong class="font-medium">Nama:</strong> <span id="display-name"></span></p>
+            <p><strong class="font-medium">Tanggal Lahir:</strong> <span id="display-dob"></span></p>
+            <p><strong class="font-medium">Jenis Kelamin:</strong> <span id="display-gender"></span></p>
+            <p class="mt-4"><strong class="font-medium">Pesan:</strong> <span id="display-message" class="block mt-2 p-3 bg-white border border-gray-200 rounded-md"></span></p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+<script src="js/script.js"></script>
+  </body>
+</html>
